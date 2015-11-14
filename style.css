@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #fefefe;
+    color: black;
+    
+    font-family: 'Roboto', 'Verdana', sans-serif;
+    font-size: 14px;
+    box-sizing: content-box;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input, button {
+    font: inherit;
+    color: inherit;
+    width: none;
+    
+    padding: 2px 6px;
+    margin: 2px 5px;
+    
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: rgba(1,1,1,0);
+    outline: none;
+    
+    
+    transition: transform ease 200ms 
+}
+
+input:hover, button:hover {
+    border-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+input.invisible_input {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 1px #000;
+    
+    transition: background-color 200ms;
+}
+
+
+
+button:active {
+    outline: none;
+    background-color: rgba(1,1,1,.1);
+    
+    transform: scale(0.8, 0.8);
+    
+    
+    transition: transform ease 200ms 
+    
+    /*
+    animation-name: scale;
+    animation-duration: 300ms; 
+    animation-timing-function: ease; 
+    animation-delay: 0;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    */
+}
+
+
+
+input:focus {
+    outline: none;
+    background-color: rgba(1,1,1,.1);
+}
+
+input.invisible_input:hover {
+    border: none;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.05);
+    
+    transition: background-color 200ms;
+}
+
+
+input:hover, button:hover {
+    cursor: pointer;
+}
+
+
+td {
+    width: 100px;
+    height: 26px;
+    
+    padding: 3px 5px;
+    border: 1px solid #999;
+    
+    white-space: nowrap;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px;
+    outline: none;
+}
+
+
+
+td.selected {
+    background-color: white;
+    box-shadow: 0px 0px 0px 2px blue inset; 
+}
+
+td:active {
+    background-color: rgba(0,0,0,0.1)
+}
+
+
+#File_Controls {
+    background-color: rgba(0,0,0,0.05);
+    
+    display: flex;
+    justify-content: space-around;
+    
+    border-bottom: 1px solid #999;
+    padding: 10px;
+}
+
+#Sheet_Controls {
+    display: flex;
+    justify-content: flex-start;
+    
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+#Seperator {
+    border-right: 1px solid black;
+}
+
+#File_Name {
+    width: 270px;
+}
+
+#Formula {
+    min-width: 200px;
+    width: auto;
+    font-family: "Menlo", "Consolas", monospace;
+    flex-grow: 1;
+}
+
+#Cursor {
+    min-width: 120px;
+}
+
+#Sheet {
+    overflow-x: scroll;
+}

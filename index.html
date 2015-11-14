@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sheets</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="center">
+        <div id="File_Controls">
+            <div class="export">
+                <input id="File_Name" class="invisible_input" type="text" placeholder="Title" accept="">
+                <button id="Export">Save</button>
+            </div>
+            <div class="import">
+                <input id="File_Input" type="file">
+                <button id="Import">Load</button>
+            </div>
+        </div>
+        <div id="Sheet_Controls">
+                <button id="Cursor">R1C1:R3C3</button>
+                <div id="Seperator"></div>
+                <input id="Formula" class="invisible_input" type="text">
+            </div>
+        <div id="Sheet">
+            <table id="Table" tabindex="0" >
+                <tr><td>Door</td><td>Stuck</td></tr>
+            </table>
+        </div>
+        <script src="packed.js"></script>
+    </body>
+</html>
