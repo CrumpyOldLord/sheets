@@ -11,7 +11,7 @@ module Sheets {
     
     
     export const name = "Sheets"
-    export const version = "0.0.1"
+    export const version = "0.0.2"
     export const storageKey = "text/sheets"
     
     export const currencySymbol = "€"  // unused, currency support required formatting which .tsv lacks
